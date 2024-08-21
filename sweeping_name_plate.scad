@@ -1,8 +1,8 @@
 // preview[view:south west, tilt:side]
 
 //Set the upper text to render
-textstring1="MARIA";
-textSecond="JOHANNES";
+textstring1="EIKE";
+textSecond="LEON";
 
 //Set the lower text to render
 textstring2="";
@@ -30,13 +30,16 @@ special_character_right="";//[none:none,9829:Heart,Star,5Star,Instagram,Youtube,
 special_emoji_right=""; 
 
 //Number of faces to round the sweep. TIP: Use "2" if you want to have a quick preview here in the customizer. Set to at least "10" once you generate a model for printing. 
-faces_segment = 20; //[1:40]
+faces_segment = 30; //[1:40]
 
 // select distance of the special char from the text (in percent of the special char size)
 distance_special_char = 0.5; 
 
 //Set upper text size (textstring1) in mm
-textsize1=28; 
+//Small: 20
+//Medium: 30
+//Large: 40
+textsize1=30; 
 
 //Set lower text size (textstring2)in mm
 textsize2=20; 
@@ -57,7 +60,7 @@ rounder_font=.01;
 leaner_font=1.00;
 
 //set base increase to make letters meet, good start is 'textsize/10'
-base_radius_add=5;
+base_radius_add=6;
 
 //set base height in mm
 baseheight=1;
@@ -66,13 +69,23 @@ baseheight=1;
 cutangle=65;
 
 //Size of the sweep in mm, good start is 13mm so it would be nearly as big as 'textsize'
-text_excenter=17;
+text_excenter = calculate_text_excenter();
+
+// When the text size grows, sweep size should also grow. This function helps automating that
+function calculate_text_excenter() = floor(textsize1 * 0.66);
+  //  let (isUsingSpecialChar = special_character_left != "")
+ //   !isUsingSpecialChar ? floor(textsize1 * 0.66) :  // Return 5 if special_character_left is not empty
+ //   (textsize1 < 20) ? 20 :     // Return 0 if textsize is less than 20
+  //  (textsize1 < 25) ? 25 :    // Return 15 if textsize is less than 25 but 20 or more
+ //   (textsize1 < 30) ? 30 :    // Return 20 if textsize is less than 30 but 25 or more
+//    (textsize1 < 35) ? 35 :    // Return 25 if textsize is less than 35 but 30 or more
+//    40;                       // Return 30 for textsize 35 or greater
 
 //Sweep direction
 direction="up"; //["up":text top is highest, "down": text bottom is highest]
 
 
-specialcharsize = 32 ; 
+specialcharsize = textsize1; 
 //-----------------
 /* [AdditionalSettings] */ 
 
