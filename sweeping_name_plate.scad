@@ -2,7 +2,7 @@
 
 // Set the upper text to render
 textstring1 = "EIKE";
-textSecond = "LEON";
+textSecond = "";
 
 // Set the lower text to render
 textstring2 = "";
@@ -19,34 +19,36 @@ textalign = "center"; // [center, left, right]
 // Font name for the upper text line. Makerworld does NOT support many fonts yet! On your computer, use fonts from:
 // http://www.google.com/fonts
 fontname1 = "Bangers"; // Bangers,Luckiest Guy, Poppins, Ubuntu, BebasNeue, LilitaOne, IndieFlower, Edu VIC VA NT
-                       // Beginner, FugazOne
+// Beginner, FugazOne
 
 //... and select your special characters, like a heart, etc.
-special_character_left = 9829; //[none:none,9829:Heart,Star,5Star,Instagram,Youtube,Corona,Pen,Cogwheel,🎄,🎅🏻,🌨️,❄,🧒,🤪,🧁,🍰,🎁,🎀,🎲,🎂,🎈,🎺,🥑,🎉,🎊,📧,〽,️🧿,🌶,🔋,😂,❤,️😍,🤣,😊,🥺,🙏,💕,😭,😘,👍,😅,👏,🐵,🥰,💀,✌,️🌴,🐢,🐐,🍄,⚽,🍻,👑,📸,😬,👀,🚨,🏡,🕊,️🏆,😻,🌟,🧿,🍀,🎨,🍜,👾,🚀,💉,Clock,†,Key,Pin,Gift,Thumbs_Up,Thumbs_Down,Mail,Cake,Person,Cloud,Book,Speaking_Bubble,Puzzle_Piece,Shopping_Cart,Cloud_download,Boarding_Pass,Trashcan,Circular_Arrows,8364:Euro,8592:Left
-                               //arrow,8594:Right arrow,🎵,9835:Double note,8801:Identical,9658:Thick right
-                               //arrow,9668:Thick left arrow,9787:Full smiley,9786:Unfilled
-                               //smiley,9788:Sun,9675:Circle,9679:Dot,9792:Female sign,9794:Male sign,9674:Diamond
-                               //unfilled,9830:Diamond,9824:Spades,9827:Club,35:#,33:!,63:?,36:$,37:%,38:&,42:*,43:+,64:@,8593:Up
-                               //arrow,8595:Down arrow,42779:Small up arrow,42780:Small down
-                               //arrow,8734:Infinity,167:Paragraph,169:Copyright,174:Registered Trademark,189:One
-                               //Half,191:Upside Down ?,216:Empty Set,215:Small x,404:Ribbon,664:Circle with
-                               //dot,673:Scythe,860:Abstract ear,936:Psy,955:Lambda,960:Pi,985:Lolly,1146:Circle with
-                               //poles,1161:Commas fly out,8286:Four dots,8962:Abstract house]
+special_character_left =
+    ""; //[none:none,9829:Heart,Star,5Star,Instagram,Youtube,Corona,Pen,Cogwheel,🎄,🎅🏻,🌨️,❄,🧒,🤪,🧁,🍰,🎁,🎀,🎲,🎂,🎈,🎺,🥑,🎉,🎊,📧,〽,️🧿,🌶,🔋,😂,❤,️😍,🤣,😊,🥺,🙏,💕,😭,😘,👍,😅,👏,🐵,🥰,💀,✌,️🌴,🐢,🐐,🍄,⚽,🍻,👑,📸,😬,👀,🚨,🏡,🕊,️🏆,😻,🌟,🧿,🍀,🎨,🍜,👾,🚀,💉,Clock,†,Key,Pin,Gift,Thumbs_Up,Thumbs_Down,Mail,Cake,Person,Cloud,Book,Speaking_Bubble,Puzzle_Piece,Shopping_Cart,Cloud_download,Boarding_Pass,Trashcan,Circular_Arrows,8364:Euro,8592:Left
+// arrow,8594:Right arrow,🎵,9835:Double note,8801:Identical,9658:Thick right
+// arrow,9668:Thick left arrow,9787:Full smiley,9786:Unfilled
+// smiley,9788:Sun,9675:Circle,9679:Dot,9792:Female sign,9794:Male sign,9674:Diamond
+// unfilled,9830:Diamond,9824:Spades,9827:Club,35:#,33:!,63:?,36:$,37:%,38:&,42:*,43:+,64:@,8593:Up
+// arrow,8595:Down arrow,42779:Small up arrow,42780:Small down
+// arrow,8734:Infinity,167:Paragraph,169:Copyright,174:Registered Trademark,189:One
+// Half,191:Upside Down ?,216:Empty Set,215:Small x,404:Ribbon,664:Circle with
+// dot,673:Scythe,860:Abstract ear,936:Psy,955:Lambda,960:Pi,985:Lolly,1146:Circle with
+// poles,1161:Commas fly out,8286:Four dots,8962:Abstract house]
 //...paste an emoji in the text field below (this field overrides the one above!): 🥳🧁🍰🎁
 special_emoji_left = "";
 
 flip_right_character = false;
 
-special_character_right = ""; //[none:none,9829:Heart,Star,5Star,Instagram,Youtube,Corona,Pen,Cogwheel,🎄,🎅🏻,🌨️,❄,🧒,🤪,🧁,🍰,🎁,🎀,🎲,🎂,🎈,🎺,🥑,🎉,🎊,📧,〽,️🧿,🌶,🔋,😂,❤,️😍,🤣,😊,🥺,🙏,💕,😭,😘,👍,😅,👏,🐵,🥰,💀,✌,️🌴,🐢,🐐,🍄,⚽,🍻,👑,📸,😬,👀,🚨,🏡,🕊,️🏆,😻,🌟,🧿,🍀,🎨,🍜,👾,🚀,💉,Clock,†,Key,Pin,Gift,Thumbs_Up,Thumbs_Down,Mail,Cake,Person,Cloud,Book,Speaking_Bubble,Puzzle_Piece,Shopping_Cart,Cloud_download,Boarding_Pass,Trashcan,Circular_Arrows,8364:Euro,8592:Left
-                              //arrow,8594:Right arrow,🎵,9835:Double note,8801:Identical,9658:Thick right
-                              //arrow,9668:Thick left arrow,9787:Full smiley,9786:Unfilled
-                              //smiley,9788:Sun,9675:Circle,9679:Dot,9792:Female sign,9794:Male sign,9674:Diamond
-                              //unfilled,9830:Diamond,9824:Spades,9827:Club,35:#,33:!,63:?,36:$,37:%,38:&,42:*,43:+,64:@,8593:Up
-                              //arrow,8595:Down arrow,42779:Small up arrow,42780:Small down
-                              //arrow,8734:Infinity,167:Paragraph,169:Copyright,174:Registered Trademark,189:One
-                              //Half,191:Upside Down ?,216:Empty Set,215:Small x,404:Ribbon,664:Circle with
-                              //dot,673:Scythe,860:Abstract ear,936:Psy,955:Lambda,960:Pi,985:Lolly,1146:Circle with
-                              //poles,1161:Commas fly out,8286:Four dots,8962:Abstract house]
+special_character_right =
+    9829; //[none:none,9829:Heart,Star,5Star,Instagram,Youtube,Corona,Pen,Cogwheel,🎄,🎅🏻,🌨️,❄,🧒,🤪,🧁,🍰,🎁,🎀,🎲,🎂,🎈,🎺,🥑,🎉,🎊,📧,〽,️🧿,🌶,🔋,😂,❤,️😍,🤣,😊,🥺,🙏,💕,😭,😘,👍,😅,👏,🐵,🥰,💀,✌,️🌴,🐢,🐐,🍄,⚽,🍻,👑,📸,😬,👀,🚨,🏡,🕊,️🏆,😻,🌟,🧿,🍀,🎨,🍜,👾,🚀,💉,Clock,†,Key,Pin,Gift,Thumbs_Up,Thumbs_Down,Mail,Cake,Person,Cloud,Book,Speaking_Bubble,Puzzle_Piece,Shopping_Cart,Cloud_download,Boarding_Pass,Trashcan,Circular_Arrows,8364:Euro,8592:Left
+// arrow,8594:Right arrow,🎵,9835:Double note,8801:Identical,9658:Thick right
+// arrow,9668:Thick left arrow,9787:Full smiley,9786:Unfilled
+// smiley,9788:Sun,9675:Circle,9679:Dot,9792:Female sign,9794:Male sign,9674:Diamond
+// unfilled,9830:Diamond,9824:Spades,9827:Club,35:#,33:!,63:?,36:$,37:%,38:&,42:*,43:+,64:@,8593:Up
+// arrow,8595:Down arrow,42779:Small up arrow,42780:Small down
+// arrow,8734:Infinity,167:Paragraph,169:Copyright,174:Registered Trademark,189:One
+// Half,191:Upside Down ?,216:Empty Set,215:Small x,404:Ribbon,664:Circle with
+// dot,673:Scythe,860:Abstract ear,936:Psy,955:Lambda,960:Pi,985:Lolly,1146:Circle with
+// poles,1161:Commas fly out,8286:Four dots,8962:Abstract house]
 //...paste an emoji in the text field below (this field overrides the one above!): 🥳🧁🍰🎁
 special_emoji_right = "";
 
@@ -114,29 +116,29 @@ specialcharsize = textsize1;
 // Set the text 1 font style - but it might be your desired style is not available for the selected font. Just try it
 // and see.
 fontstyle1 = "Regular"; //[Regular,Bold,Italic,Bold Italic,Narrow,ExtraBold,Black,Light,Thin,Medium Italic,
-                        //SemiBold,Condensed,Expanded,Oblique]
+// SemiBold,Condensed,Expanded,Oblique]
 
 // Font name for the lower (or if one line only) text line. By default, is the same as above "<same as fontname1>"
 fontname2 = "<same as fontname1>"; //[<same as fontname1>,Bangers,Aldo,Lobster,Luckiest Guy,Norwester,Orbitron,Spicy
-                                   //Rice,HarmonyOS Sans SC, "Noto Sans","Rubik wet paint","Montserrat
-                                   //Alternates","Oswald",Noto Sans KR,"Roboto Serif","noto sans sc"]
+// Rice,HarmonyOS Sans SC, "Noto Sans","Rubik wet paint","Montserrat
+// Alternates","Oswald",Noto Sans KR,"Roboto Serif","noto sans sc"]
 
 // Set the text 2 font style - but it might be your desired style is not available for the selected font. Just try it
 // and see.
 fontstyle2 = "<same as fontstyle1>"; //[<same as fontstyle1>,Regular,Bold,Italic,Bold
-                                     //Italic,Narrow,ExtraBold,Black,Light,Thin,Medium Italic,
-                                     //SemiBold,Condensed,Expanded,Oblique]
+// Italic,Narrow,ExtraBold,Black,Light,Thin,Medium Italic,
+// SemiBold,Condensed,Expanded,Oblique]
 
 // Font name for the lowest text line. By default, is the same as the first "<same as fontname1>"
 fontname3 = "<same as fontname1>"; //[<same as fontname1>,Bangers,Aldo,Lobster,Luckiest Guy,Norwester,Orbitron,Spicy
-                                   //Rice,HarmonyOS Sans SC, "Noto Sans","Rubik wet paint","Montserrat
-                                   //Alternates","Oswald",Noto Sans KR,"Roboto Serif","noto sans sc"]
+// Rice,HarmonyOS Sans SC, "Noto Sans","Rubik wet paint","Montserrat
+// Alternates","Oswald",Noto Sans KR,"Roboto Serif","noto sans sc"]
 
 // Set the text 3 font style - but it might be your desired style is not available for the selected font. Just try it
 // and see.
 fontstyle3 = "<same as fontstyle1>"; //[<same as fontstyle1>,Regular,Bold,Italic,Bold
-                                     //Italic,Narrow,ExtraBold,Black,Light,Thin,Medium Italic,
-                                     //SemiBold,Condensed,Expanded,Oblique]
+// Italic,Narrow,ExtraBold,Black,Light,Thin,Medium Italic,
+// SemiBold,Condensed,Expanded,Oblique]
 
 // For the square basetype, add Border in mm to add "above" of the letters and "below" the letters
 border_topdown = 3;
@@ -153,8 +155,8 @@ HiddenTextSize = 8;
 // Hidden text font name. By default, is the same as above "<same as fontname1>"
 fontname_hiddentext =
     "<same as fontname1>"; //[<same as fontname1>,Bangers,Aldo,Lobster,Luckiest Guy,Norwester,Orbitron,Spicy
-                           //Rice,HarmonyOS Sans SC, "Noto Sans","Rubik wet paint","Montserrat Alternates","Oswald",Noto
-                           //Sans KR,"Roboto Serif","noto sans sc"]
+// Rice,HarmonyOS Sans SC, "Noto Sans","Rubik wet paint","Montserrat Alternates","Oswald",Noto
+// Sans KR,"Roboto Serif","noto sans sc"]
 
 // Select this if you want to add magnets to the base
 magnettype = "None"; //[None,Cube10x1,Cylinder8x3,Cylinder5x2c5,Cylinder8x1c7,Cylinder12x2c5]
@@ -396,17 +398,15 @@ function type(x) = (x == undef      ? undef
                                            ? "range"
                                            : "unknown"));
 
-module writetext(textstr1, textstr2, textstr3, sizeit1, sizeit2, sizeit3, add_a_special_character_connector)
+module writetext(textstr1, textstr2, textstr3, add_a_special_character_connector)
 {
     halignvalue = textalign;
 
-    echo("move", shifttext);
-
-    offset(sizeit1 * rounder_font) scale([ leaner_font, 1, 1 ]) translate([ shifttext, 0, 0 ])
+    offset(textsize1 * rounder_font) scale([ leaner_font, 1, 1 ]) translate([ shifttext, 0, 0 ])
     {
         // Translate and render the first text string (textstr1)
         translate([ 0, distance_line_2_to_3 + distance_line_1_to_2, 0 ])
-            text(textstr1, size = sizeit1, font = fullfont1, halign = halignvalue, valign = "center");
+            text(textstr1, size = textsize1, font = fullfont1, halign = halignvalue, valign = "center");
 
         // Handle the special character and the additional text "Samuel"
         translate([ 0, specialchar_y, 0 ])
@@ -425,41 +425,42 @@ module writetext(textstr1, textstr2, textstr3, sizeit1, sizeit2, sizeit3, add_a_
                         square([ specialcharsize, connectorsize ], center = "true");
                 }
 
-                // Add the text "Samuel" to the right of the special character
-                translate([ textwidth / 2 + specialcharsize * 0.92, 0, 0 ])
-                    text(textSecond, size = sizeit1, font = fullfont1, halign = "left", valign = "center");
+                if (textSecond != "")
+                {
+                    // Add the text "Samuel" to the right of the special character
+                    translate([ textwidth / 2 + specialcharsize * 0.92, 0, 0 ])
+                        text(textSecond, size = textsize1, font = fullfont1, halign = "left", valign = "center");
+                }
             }
         }
 
         // Optionally render the second and third text strings if provided
         translate([ 0, distance_line_2_to_3, 0 ])
-            text(textstr2, size = sizeit2, font = fullfont2, halign = halignvalue, valign = "center");
+            text(textstr2, size = textsize2, font = fullfont2, halign = halignvalue, valign = "center");
 
-        text(textstr3, size = sizeit3, font = fullfont3, halign = halignvalue, valign = "center");
+        text(textstr3, size = textsize3, font = fullfont3, halign = halignvalue, valign = "center");
     }
 }
 
 //------------------
 
-module hull_of_object(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, paperheight)
+module hull_of_object(textstr1, textstr2, textstr3, paperheight)
 {
     // rotate([0,(direction=="up"?1:-1)*90,0])scale([1,(direction=="up"?1:-1),1])
-    linear_extrude(height = paperheight / 2, convexity = 10) hull()
-        writetext(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, 1);
+    linear_extrude(height = paperheight / 2, convexity = 10) hull() writetext(textstr1, textstr2, textstr3, 1);
 }
 
-module square_hull_of_object(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, baseheight)
+module square_hull_of_object(textstr1, textstr2, textstr3, baseheight)
 {
 
     minkowski()
     {
         translate([ -border_side, 0, 0 ]) rotate([ 0, 90, 0 ]) linear_extrude(height = 2 * border_side, convexity = 2)
-            projection(cut = false) rotate([ 0, -90, 0 ])
-                hull_of_object(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, baseheight);
+            projection(cut = false) rotate([ 0, -90, 0 ]) hull_of_object(textstr1, textstr2, textstr3, baseheight);
 
         translate([ 0, border_topdown, 0 ]) rotate([ 90, 0, 0 ])
             linear_extrude(height = 2 * border_topdown, convexity = 2) projection(cut = false) rotate([ -90, 0, 0 ])
-                hull_of_object(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, baseheight);
+                hull_of_object(textstr1, textstr2, textstr3, baseheight);
     }
 }
 
@@ -504,7 +505,7 @@ module rotate_extrude2(angle = 360, convexity = 2, xsize = 100, yzsize = 100)
 }
 
 //------------------
-module RiseText(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, direction = "up")
+module RiseText(textstr1, textstr2, textstr3, direction = "up")
 {
 
     rotate([ 0, -90, 0 ])
@@ -518,8 +519,7 @@ module RiseText(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, d
                 rotate([ 0, 0, 90 - cutangle + 0.0001 ]) rotate_extrude2(
                     angle = cutangle, convexity = 10, xsize = cutcube_x, yzsize = cutcube_yz, $fn = faces)
                     translate([ (direction == "up" ? text_excenter : specialchar_y * 2 + text_excenter), 0, 0 ])
-                        rotate([ 0, 0, (direction == "up" ? -1 : 1) * 90 ])
-                            writetext(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, 0);
+                        rotate([ 0, 0, (direction == "up" ? -1 : 1) * 90 ]) writetext(textstr1, textstr2, textstr3, 0);
 
                 // magnet holder
                 translate([
@@ -546,7 +546,7 @@ module RiseText(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, d
         {
             if (BaseType == "Minimal_straight")
                 linear_extrude(height = baseheight, twist = 0, slices = 1, $fn = 32, convexity = 5) hull()
-                    writetext(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, 0);
+                    writetext(textstr1, textstr2, textstr3, 0);
 
             if (BaseType == "Rectangle" || BaseType == "Rounded_rectangle")
                 if (BaseType == "Rectangle")
@@ -579,7 +579,7 @@ module RiseText(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, d
 
                     straightpart = .4;
 
-                    square_hull_of_object(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, straightpart);
+                    square_hull_of_object(textstr1, textstr2, textstr3, straightpart);
 
                     // cylinder(r1=baseheight-straightpart,r2=0,h=baseheight-straightpart,$fn=4);
                     extrude_height = baseheight - straightpart;
@@ -592,7 +592,7 @@ module RiseText(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, d
                 linear_extrude(height = baseheight, twist = 0, slices = 1, $fn = 32, convexity = 5)
                     offset(r = base_radius_add)
                 {
-                    writetext(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, 1);
+                    writetext(textstr1, textstr2, textstr3, 1);
                 }
 
             if (BaseSwissCheeseHoleD > 0)
@@ -656,12 +656,11 @@ module RiseText(textstr1, textstr2, textstr3, textsize1, textsize2, textsize3, d
 // rotate([-90,0,180])
 if (part_to_generate == "sweeping_text")
 {
-    RiseText(textstring1, textstring2, textstring3, textsize1, textsize2, textsize3, direction);
+    RiseText(textstring1, textstring2, textstring3, direction);
 }
 else
 {
-    linear_extrude(height = letter_caps_thickness, convexity = 10)
-        writetext(textstring1, textstring2, textstring3, textsize1, textsize2, textsize3, 0);
+    linear_extrude(height = letter_caps_thickness, convexity = 10) writetext(textstring1, textstring2, textstring3, 0);
 }
 
 //------------------------------------------------------------
