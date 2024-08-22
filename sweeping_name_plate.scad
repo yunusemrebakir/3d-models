@@ -36,7 +36,7 @@ fontname1 = "Bangers";
 base_radius_add = 6;
 
 // set base height in mm
-baseheight = 1;
+baseheight = 1.6;
 
 // Size of the special character in mm
 specialcharsize = textsize1;
