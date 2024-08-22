@@ -1,11 +1,45 @@
 // preview[view:south west, tilt:side]
 
+// Set upper text size (textstring1) in mm
+// Small: 20
+// Medium: 30
+// Large: 40
+textsize1 = 30;
+
 // Set the upper text to render
 textstring1 = "EIKE";
+
+// Text that is added to the most right of everything
 textSecond = "";
 
 // Set the lower text to render
 textstring2 = "";
+
+//[none:none,9829:Heart,Star,5Star,Instagram,Youtube,Corona,Pen,Cogwheel,🎄,🎅🏻,🌨️,❄,🧒,🤪,🧁,🍰,🎁,🎀,🎲,🎂,🎈,🎺,🥑,🎉,🎊,📧,〽,️🧿,🌶,🔋,😂,❤,️😍,🤣,😊,🥺,🙏,💕,😭,😘,👍,😅,👏,🐵,🥰,💀,✌,️🌴,🐢,🐐,🍄,⚽,🍻,👑,📸,😬,👀,🚨,🏡,🕊,️🏆,😻,🌟,🧿,🍀,🎨,🍜,👾,🚀,💉,Clock,†,Key,Pin,Gift,Thumbs_Up,Thumbs_Down,Mail,Cake,Person,Cloud,Book,Speaking_Bubble,Puzzle_Piece,Shopping_Cart,Cloud_download,Boarding_Pass,Trashcan,Circular_Arrows,8364:Euro,8592:Left
+// arrow,8594:Right arrow,🎵,9835:Double note,8801:Identical,9658:Thick right
+// arrow,9668:Thick left arrow,9787:Full smiley,9786:Unfilled
+// smiley,9788:Sun,9675:Circle,9679:Dot,9792:Female sign,9794:Male sign,9674:Diamond
+// unfilled,9830:Diamond,9824:Spades,9827:Club,35:#,33:!,63:?,36:$,37:%,38:&,42:*,43:+,64:@,8593:Up
+// arrow,8595:Down arrow,42779:Small up arrow,42780:Small down
+// arrow,8734:Infinity,167:Paragraph,169:Copyright,174:Registered Trademark,189:One
+// Half,191:Upside Down ?,216:Empty Set,215:Small x,404:Ribbon,664:Circle with
+// dot,673:Scythe,860:Abstract ear,936:Psy,955:Lambda,960:Pi,985:Lolly,1146:Circle with
+// poles,1161:Commas fly out,8286:Four dots,8962:Abstract house]
+special_character_left = "";
+special_character_right = 9829;
+
+// Bangers,Luckiest Guy, Poppins, Ubuntu, BebasNeue, LilitaOne, IndieFlower, Edu VIC VA NT
+// Beginner, FugazOne
+fontname1 = "Bangers";
+
+// set base increase to make letters meet, good start is 'textsize/10'
+base_radius_add = 6;
+
+// set base height in mm
+baseheight = 1;
+
+// Size of the special character in mm
+specialcharsize = textsize1;
 
 // Set a third text line to render (typically not used. If you use this line, the other two lines will move up to make
 // room for the lowest line)
@@ -16,41 +50,11 @@ HiddenText = "3d.gifts";
 
 textalign = "center"; // [center, left, right]
 
-// Font name for the upper text line. Makerworld does NOT support many fonts yet! On your computer, use fonts from:
-// http://www.google.com/fonts
-fontname1 = "Bangers"; // Bangers,Luckiest Guy, Poppins, Ubuntu, BebasNeue, LilitaOne, IndieFlower, Edu VIC VA NT
-// Beginner, FugazOne
-
-//... and select your special characters, like a heart, etc.
-special_character_left =
-    ""; //[none:none,9829:Heart,Star,5Star,Instagram,Youtube,Corona,Pen,Cogwheel,🎄,🎅🏻,🌨️,❄,🧒,🤪,🧁,🍰,🎁,🎀,🎲,🎂,🎈,🎺,🥑,🎉,🎊,📧,〽,️🧿,🌶,🔋,😂,❤,️😍,🤣,😊,🥺,🙏,💕,😭,😘,👍,😅,👏,🐵,🥰,💀,✌,️🌴,🐢,🐐,🍄,⚽,🍻,👑,📸,😬,👀,🚨,🏡,🕊,️🏆,😻,🌟,🧿,🍀,🎨,🍜,👾,🚀,💉,Clock,†,Key,Pin,Gift,Thumbs_Up,Thumbs_Down,Mail,Cake,Person,Cloud,Book,Speaking_Bubble,Puzzle_Piece,Shopping_Cart,Cloud_download,Boarding_Pass,Trashcan,Circular_Arrows,8364:Euro,8592:Left
-// arrow,8594:Right arrow,🎵,9835:Double note,8801:Identical,9658:Thick right
-// arrow,9668:Thick left arrow,9787:Full smiley,9786:Unfilled
-// smiley,9788:Sun,9675:Circle,9679:Dot,9792:Female sign,9794:Male sign,9674:Diamond
-// unfilled,9830:Diamond,9824:Spades,9827:Club,35:#,33:!,63:?,36:$,37:%,38:&,42:*,43:+,64:@,8593:Up
-// arrow,8595:Down arrow,42779:Small up arrow,42780:Small down
-// arrow,8734:Infinity,167:Paragraph,169:Copyright,174:Registered Trademark,189:One
-// Half,191:Upside Down ?,216:Empty Set,215:Small x,404:Ribbon,664:Circle with
-// dot,673:Scythe,860:Abstract ear,936:Psy,955:Lambda,960:Pi,985:Lolly,1146:Circle with
-// poles,1161:Commas fly out,8286:Four dots,8962:Abstract house]
 //...paste an emoji in the text field below (this field overrides the one above!): 🥳🧁🍰🎁
 special_emoji_left = "";
+special_emoji_right = "";
 
 flip_right_character = false;
-
-special_character_right =
-    9829; //[none:none,9829:Heart,Star,5Star,Instagram,Youtube,Corona,Pen,Cogwheel,🎄,🎅🏻,🌨️,❄,🧒,🤪,🧁,🍰,🎁,🎀,🎲,🎂,🎈,🎺,🥑,🎉,🎊,📧,〽,️🧿,🌶,🔋,😂,❤,️😍,🤣,😊,🥺,🙏,💕,😭,😘,👍,😅,👏,🐵,🥰,💀,✌,️🌴,🐢,🐐,🍄,⚽,🍻,👑,📸,😬,👀,🚨,🏡,🕊,️🏆,😻,🌟,🧿,🍀,🎨,🍜,👾,🚀,💉,Clock,†,Key,Pin,Gift,Thumbs_Up,Thumbs_Down,Mail,Cake,Person,Cloud,Book,Speaking_Bubble,Puzzle_Piece,Shopping_Cart,Cloud_download,Boarding_Pass,Trashcan,Circular_Arrows,8364:Euro,8592:Left
-// arrow,8594:Right arrow,🎵,9835:Double note,8801:Identical,9658:Thick right
-// arrow,9668:Thick left arrow,9787:Full smiley,9786:Unfilled
-// smiley,9788:Sun,9675:Circle,9679:Dot,9792:Female sign,9794:Male sign,9674:Diamond
-// unfilled,9830:Diamond,9824:Spades,9827:Club,35:#,33:!,63:?,36:$,37:%,38:&,42:*,43:+,64:@,8593:Up
-// arrow,8595:Down arrow,42779:Small up arrow,42780:Small down
-// arrow,8734:Infinity,167:Paragraph,169:Copyright,174:Registered Trademark,189:One
-// Half,191:Upside Down ?,216:Empty Set,215:Small x,404:Ribbon,664:Circle with
-// dot,673:Scythe,860:Abstract ear,936:Psy,955:Lambda,960:Pi,985:Lolly,1146:Circle with
-// poles,1161:Commas fly out,8286:Four dots,8962:Abstract house]
-//...paste an emoji in the text field below (this field overrides the one above!): 🥳🧁🍰🎁
-special_emoji_right = "";
 
 // Number of faces to round the sweep. TIP: Use "2" if you want to have a quick preview here in the customizer. Set to
 // at least "10" once you generate a model for printing.
@@ -59,12 +63,6 @@ faces_segment = 30; //[1:40]
 // select distance of the special char from the text (in percent of the special char size)
 distance_special_char = 0.5;
 
-// Set upper text size (textstring1) in mm
-// Small: 20
-// Medium: 30
-// Large: 40
-textsize1 = 30;
-
 // Set lower text size (textstring2)in mm
 textsize2 = 20;
 
@@ -72,7 +70,7 @@ textsize2 = 20;
 textsize3 = 16;
 
 // Distance between the two lines in font height
-distance = 1.35;
+distance = 1.20;
 
 // Base type, select "Round" if you want a rounded base following the texts contours. Select "Rounded_rectangle" and
 // increase baseheight and Rounded_rectangle_radius (take care that: baseheight > 2*Rounded_rectangle_radius)
@@ -83,12 +81,6 @@ rounder_font = .01;
 
 // make font leaner, should be below 1 to make lean
 leaner_font = 1.00;
-
-// set base increase to make letters meet, good start is 'textsize/10'
-base_radius_add = 6;
-
-// set base height in mm
-baseheight = 1;
 
 // set angle to sweep
 cutangle = 65;
@@ -109,7 +101,6 @@ function calculate_text_excenter() = floor(textsize1 * 0.66);
 // Sweep direction
 direction = "up"; //["up":text top is highest, "down": text bottom is highest]
 
-specialcharsize = textsize1;
 //-----------------
 /* [AdditionalSettings] */
 
@@ -398,7 +389,7 @@ function type(x) = (x == undef      ? undef
                                            ? "range"
                                            : "unknown"));
 
-module writetext(textstr1, textstr2, textstr3, add_a_special_character_connector)
+module writetext(textstr1, textstr2, textstr3)
 {
     halignvalue = textalign;
 
@@ -408,31 +399,29 @@ module writetext(textstr1, textstr2, textstr3, add_a_special_character_connector
         translate([ 0, distance_line_2_to_3 + distance_line_1_to_2, 0 ])
             text(textstr1, size = textsize1, font = fullfont1, halign = halignvalue, valign = "center");
 
-        // Handle the special character and the additional text "Samuel"
+        // Handle the special character
         translate([ 0, specialchar_y, 0 ])
         {
             if (special_character_left != "none" && special_character_left != "")
             {
                 // Position and render the special character to the right of textstr1
-                translate([ textwidth / 2 + distancespecialchar, 0, 0 ])
+                translate([ -(textwidth / 2 + distancespecialchar), 0, 0 ])
 
                     do_special_char(special_character_left, special_emoji_left);
+            }
 
-                if (add_a_special_character_connector == 1)
-                {
-                    connectorsize = specialcharsize * .3;
-                    translate([ textwidth / 2 + distancespecialchar, specialchar_y - connectorsize / 2 ])
-                        square([ specialcharsize, connectorsize ], center = "true");
-                }
+            if (special_character_right != "none" && special_character_right != "")
+            {
+                // Position and render the special character to the right of textstr1
+                translate([ textwidth / 2 + distancespecialchar, 0, 0 ])
 
-                if (textSecond != "")
-                {
-                    // Add the text "Samuel" to the right of the special character
-                    translate([ textwidth / 2 + specialcharsize * 0.92, 0, 0 ])
-                        text(textSecond, size = textsize1, font = fullfont1, halign = "left", valign = "center");
-                }
+                    do_special_char(special_character_right, special_emoji_right);
             }
         }
+
+        // Add to the most right of the text
+        translate([ textwidth / 2 + specialcharsize, 0, 0 ])
+            text(textSecond, size = textsize1, font = fullfont1, halign = "left", valign = "center");
 
         // Optionally render the second and third text strings if provided
         translate([ 0, distance_line_2_to_3, 0 ])
@@ -447,7 +436,7 @@ module writetext(textstr1, textstr2, textstr3, add_a_special_character_connector
 module hull_of_object(textstr1, textstr2, textstr3, paperheight)
 {
     // rotate([0,(direction=="up"?1:-1)*90,0])scale([1,(direction=="up"?1:-1),1])
-    linear_extrude(height = paperheight / 2, convexity = 10) hull() writetext(textstr1, textstr2, textstr3, 1);
+    linear_extrude(height = paperheight / 2, convexity = 10) hull() writetext(textstr1, textstr2, textstr3);
 }
 
 module square_hull_of_object(textstr1, textstr2, textstr3, baseheight)
@@ -519,7 +508,7 @@ module RiseText(textstr1, textstr2, textstr3, direction = "up")
                 rotate([ 0, 0, 90 - cutangle + 0.0001 ]) rotate_extrude2(
                     angle = cutangle, convexity = 10, xsize = cutcube_x, yzsize = cutcube_yz, $fn = faces)
                     translate([ (direction == "up" ? text_excenter : specialchar_y * 2 + text_excenter), 0, 0 ])
-                        rotate([ 0, 0, (direction == "up" ? -1 : 1) * 90 ]) writetext(textstr1, textstr2, textstr3, 0);
+                        rotate([ 0, 0, (direction == "up" ? -1 : 1) * 90 ]) writetext(textstr1, textstr2, textstr3);
 
                 // magnet holder
                 translate([
@@ -546,7 +535,7 @@ module RiseText(textstr1, textstr2, textstr3, direction = "up")
         {
             if (BaseType == "Minimal_straight")
                 linear_extrude(height = baseheight, twist = 0, slices = 1, $fn = 32, convexity = 5) hull()
-                    writetext(textstr1, textstr2, textstr3, 0);
+                    writetext(textstr1, textstr2, textstr3);
 
             if (BaseType == "Rectangle" || BaseType == "Rounded_rectangle")
                 if (BaseType == "Rectangle")
@@ -592,7 +581,7 @@ module RiseText(textstr1, textstr2, textstr3, direction = "up")
                 linear_extrude(height = baseheight, twist = 0, slices = 1, $fn = 32, convexity = 5)
                     offset(r = base_radius_add)
                 {
-                    writetext(textstr1, textstr2, textstr3, 1);
+                    writetext(textstr1, textstr2, textstr3);
                 }
 
             if (BaseSwissCheeseHoleD > 0)
@@ -660,7 +649,7 @@ if (part_to_generate == "sweeping_text")
 }
 else
 {
-    linear_extrude(height = letter_caps_thickness, convexity = 10) writetext(textstring1, textstring2, textstring3, 0);
+    linear_extrude(height = letter_caps_thickness, convexity = 10) writetext(textstring1, textstring2, textstring3);
 }
 
 //------------------------------------------------------------
@@ -679,7 +668,6 @@ module do_special_char(typestr, special_emoji)
     }
     else
     {
-        // echo ("FONT!", len(typestr), typestr);
         if (len(typestr) < 3)
         {
             text(typestr, size = specialcharsize, font = "Noto EmojiRegular", halign = "center", valign = "center");
